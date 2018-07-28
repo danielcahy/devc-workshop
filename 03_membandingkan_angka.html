@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Latihan 02</title>
+  </head>
+  <body>
+    <script>
+    const angka1 = prompt("masukan angka1");
+    if (isNaN(Number(angka1))) {
+      console.log('Harap masukan angka');
+    }
+    else {
+      const angka2 = prompt("masukan angka2");
+      if (isNaN(Number(angka2))) {
+        console.log('Harap masukan angka');
+      }
+      else {
+        if (angka1 == angka2) {
+          console.log('Angka1 setara angka2');
+        }
+        else if (angka1 < angka2) {
+          console.log('Angka1 kurang dari angka2');
+        }
+        else {
+          console.log('Angka1 lebih dari angka2');
+        }
+      }      
+    }
+    
+    
+
+    </script>
+  </body>
+</html>
