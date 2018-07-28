@@ -8,18 +8,18 @@
     let number = Number(prompt('Masukan angka..'));
     console.log(typeof(number));
     
-    if (isNaN(number) == false ) {
+    if (isNaN(number)) {
+      console.log('Ini bukan angka');
+    } else {
       if (number > 0) {
         console.log('Angka positif')
-      }else {
+      } else {
         if (number < 0) {
           console.log('Angka negatif');
-        }else {
+        } else {
           console.log('Angka 0');
         }
-      }}
-    else {
-      console.log('Ini bukan angka');
+      }
     }
     </script>
   </body>
