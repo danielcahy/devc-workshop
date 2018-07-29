@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Latihan 02</title>
+  </head>
+  <body>
+    <script>
+    const aurora = {
+      name: "Aurora",
+      health: 150,
+      strength: 25,
+      xp: 0,
+
+      // Mengembalikan deskripsi karakter
+      describe() {
+        return `${this.name} has ${this.health} health points and ${this
+          .strength} as strength and ${this.xp} xp.`;
+      }
+    };
+    // Aurora is harmed by an arrow
+    aurora.health -= 20;
+    // Aurora diserang dengan panah
+    aurora.strength += 10;
+    // Aurora belajar kemampuan baru
+    aurora.xp += 15;
+    console.log(aurora.describe());
+    </script>
+  </body>
+</html>

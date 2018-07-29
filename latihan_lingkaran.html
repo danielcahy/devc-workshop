@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Latihan 02</title>
+  </head>
+  <body>
+    <script>
+    const r = Number(prompt('Masukan jari-jari'));
+    const lingkaran = {
+      radius: r,
+      circumference() {
+        return this.radius;
+      },
+      area() {
+        return Math.pow(this.radius, 2) * Math.PI;
+      }
+    }
+    console.log(`Jari-jari lingkaran adalah ${lingkaran.circumference()}`);
+    console.log(`Luas lingkaran adalah ${lingkaran.area()}`);
+    </script>
+  </body>
+</html>

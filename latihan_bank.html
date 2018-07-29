@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Latihan 02</title>
+  </head>
+  <body>
+    <script>
+    const account = {
+      name: 'Alex',
+      balance: 0,
+      credit(n) {
+        this.balance += n;
+      },
+      describe() {
+        console.log(`Nama akun: ${this.name} | Balance akun: ${this.balance}`);
+      }  
+    }
+    account.describe();
+    account.credit(250);
+    account.credit(-80);
+    account.describe();
+    </script>
+  </body>
+</html>
