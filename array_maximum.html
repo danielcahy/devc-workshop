@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Latihan 02</title>
+  </head>
+  <body>
+    <script>
+    const values = [3, 11, 7, 2, 9, 10];
+    function max(array) {
+      let max = array[0];
+      for (let value of array) {
+        if (max < value) {
+          max = value;
+        }
+      }
+      return max;
+    }
+    console.log(values);
+    console.log(max(values));
+    </script>
+  </body>
+</html>
